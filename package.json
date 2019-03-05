@@ -1,0 +1,28 @@
+{
+  "name": "vultureCode",
+  "version": "1.0.0",
+  "description": "A webscrapper for googling code problems. No more opening 6 stackOverflow links. Find small problems instantly.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-sides/vultureCode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the-sides/vultureCode/issues"
+  },
+  "homepage": "https://github.com/the-sides/vultureCode#readme",
+  "dependencies": {
+    "next": "^8.0.3",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
+}
