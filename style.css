@@ -1,0 +1,18 @@
+body{
+    background-color: #2b583c;
+    font-family: 'Exo 2', sans-serif;
+}
+.searchBar{
+    background-color:#23da69;
+    height:64px;
+    width:100%;
+}
+.panel{
+    width:200px;
+    height:200px;
+    background-color:rgb(0, 253, 177);
+}
+.phead{
+    text-align: center;
+    border-bottom: solid 2px black;
+}

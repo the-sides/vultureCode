@@ -1,6 +1,8 @@
 What will the states be?
 
 Need constructors for each link result.
+
+#### UI
 UI for header search menu
 * Language
 * Keywords 
@@ -13,6 +15,16 @@ UI for each panel?
 * Title, hyperlinked to original link
 * ??? Reliability ??? range from 1 - 10 based on google page or SO answer's vote. 
 * copy code to clipboard button
+* down-arrow to extend results
+    * accept feedback based on what should have been shown first by default
 * `StackOverflow` enhancements:
   * related searches
   * answer score
+
+#### Parsing results
+Build custom parsers for popular websites
+StackOverflow, w3c
+
+#### Feedback
+Will feedback contribute to how the whole platform runs, or catered to what a specific user likes to see. Would they rather see explanations or code?
+

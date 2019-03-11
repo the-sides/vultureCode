@@ -21,8 +21,9 @@
   },
   "homepage": "https://github.com/the-sides/vultureCode#readme",
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "next": "^8.0.3",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3"
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   }
 }

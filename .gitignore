@@ -65,3 +65,6 @@ api/mongo-key.json
 
 # i fucking hate this mac shit
 .DS_Store
+
+# I'll add once I decide to use, regardless, probably shouldn't be on github
+vulture.jpg
