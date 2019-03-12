@@ -6,11 +6,19 @@ body{
     background-color:#23da69;
     height:64px;
     width:100%;
+    
 }
 .panel{
-    width:200px;
-    height:200px;
+    width:320px;
+    height:320px;
+    margin:1em;
     background-color:rgb(0, 253, 177);
+    /* Will this transpile into webkit and moz-box? */
+    box-shadow: 0px 18px 68px 0px rgba(0,0,0,0.56);
+    border-radius: 24px 24px 24px 24px;
+    -moz-border-radius: 24px 24px 24px 24px;
+    -webkit-border-radius: 24px 24px 24px 24px;
+    border: 3px solid #358533;
 }
 .phead{
     text-align: center;
