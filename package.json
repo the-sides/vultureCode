@@ -4,7 +4,7 @@
   "description": "A webscrapper for googling code problems. No more opening 6 stackOverflow links. Find small problems instantly.",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "node ssr-server.js",
     "build": "next build",
     "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,10 +23,12 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
+    "express": "^4.16.4",
     "next": "^8.0.3",
     "node-sass": "^4.11.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-materialize": "^2.6.0"
+    "react-materialize": "^2.6.0",
+    "request-promise": "^4.2.4"
   }
 }
