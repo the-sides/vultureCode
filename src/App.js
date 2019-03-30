@@ -1,27 +1,56 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './static/style.sass';
 import './App.css'
+import { Button} from 'react-materialize'
+import M from 'materialize-css'
+
+// 
+let crawler = () => {
+  console.log("boo")
+}
+
+function Search(){
+  return (
+   <div className='searchBar row'>
+      <div className="input-field col s8">
+        <input id="keywords" placeholder="KEYWORDS" type="text"/>
+        <label htmlFor="keywords"></label>
+      </div>
+      <Button id ="searchBtn" className="col s2 offset-s1" 
+          waves='green' onClick={crawler}>Scavenge</Button>
+    </div>
+  )
+}
+
+function Panel(props){
+  return (
+  <div className='panel'>
+    <div className='phead'>
+        {props.title}
+    </div>
+    <pre>{`
+    // Imported via webscraper
+    function sort(a, b){
+      if(a < b){
+        doStuff();
+      }
+      else
+        giveUp();
+    }
+    WE CAN DO MORE!
+    `}</pre>
+  </div>)
+}
 
 class App extends Component {
+  componentDidMount(){
+    M.AutoInit();
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            {/* Edit <code>src/App.js</code> and save to reload. */}
-            React > Gone with the Wind
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+          <Search/>
+          <Panel title="StackOverflow: sorting arrays in javascript" code="function(){this is code}"/>
       </div>
     );
   }

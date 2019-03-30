@@ -2,10 +2,13 @@
   "name": "vulture",
   "version": "0.1.0",
   "private": true,
+  "description": "A webscrapper for googling code problems. No more opening 6 stackOverflow links. Find small problems instantly.",
   "dependencies": {
+    "materialize-css": "^1.0.0",
     "node-sass": "^4.11.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
+    "react-materialize": "^3.0.3",
     "react-scripts": "2.1.8"
   },
   "scripts": {
@@ -14,6 +17,17 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-sides/vultureCode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the-sides/vultureCode/issues"
+  },
+  "homepage": "https://github.com/the-sides/vultureCode#readme",
   "eslintConfig": {
     "extends": "react-app"
   },
