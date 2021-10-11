@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "vulture",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A webscrapper for googling code problems. No more opening 6 stackOverflow links. Find small problems instantly.",
   "scripts": {
     "dev": "next dev",
