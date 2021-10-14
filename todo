@@ -1,0 +1,28 @@
+Ideas
+☐ globe icon button for visiting site, on result cards
+☐ 3-dot menu at the bottom, report buttons, did not like. Opens up a banner that says "i did not code this"
+☐ crazy mortal kombat, metal simulator where you beat up a carcess to apply stats on how difficult/annoying the code made you feel
+
+
+Pages
+
+User - simply based on localstorage - make a new user upon first time visitors
+
+Home 
+☐ Hero - big search bar and cool header
+	☐ content?
+block change should swap to grey background, on the fold
+☐ About
+☐ Features blocks
+
+About - 
+I wanted a better way to search and save code.
+Those are two big parts it seems. 
+Using Google results, Vulture will find code with the results' webpages and 
+---
+On one side, saving code is very common amongst all the snippet savers with all the extensions. 
+	I want to keep that side realitively simple, but also strong enough that basic navigation, filtering, and control is good enough.
+On the other, search...
+	More so, the markup parsing and code identifier. 
+	I'm simple getting the results from
+---
