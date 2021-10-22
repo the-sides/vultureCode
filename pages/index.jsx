@@ -30,7 +30,7 @@ window.addEventListener(‘DOMContentLoaded’, run);`
 
 				<div className="mt-16 w-full grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-12 max-w-screen-xl 3xl:max-w-screen-2xl">
 					{[sampleRes, sampleRes, sampleRes, sampleRes].map((res, ind) => 
-						<Card {...res} ></Card>
+						<Card key={ind} {...res} ></Card>
 					)}
 				</div>
 
