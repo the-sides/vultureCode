@@ -2,8 +2,8 @@ import Add from "../svgs/add.svg";
 
 export default function Card(props) {
   return (
-    <div className="bg-[#F77F4C] rounded flex flex-col drop-shadow-sm relative group children:duration-300">
-      <a href="#" className="text-left text-xl pt-3 pl-3 text-[#FEF3EE]">
+    <div className="bg-[#F77F4C] rounded flex flex-col max-h-[400px] drop-shadow-sm relative group children:duration-300">
+      <a href={props.link} target="_blank" className="text-left text-xl pt-3 pl-3 text-[#FEF3EE]">
         {props.title}
       </a>
       {/* This represents the top of the code but nothing more */}
