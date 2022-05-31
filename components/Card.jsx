@@ -12,8 +12,7 @@ export default function Card(props) {
           <Add className=""></Add>
         </button>
       </div>
-      <pre className="text-left bg-[#FCD0BE] rounded text-black p-8 -translate-x-4 translate-y-4 flex-1 overflow-auto group-hover:-translate-x-10 transition-transform">
-        {props.content}
+      <pre dangerouslySetInnerHTML={{__html: props.content}} className="text-left bg-[#FCD0BE] rounded text-black p-8 -translate-x-4 translate-y-4 flex-1 overflow-auto group-hover:-translate-x-10 transition-transform">
       </pre>
     </div>
   );

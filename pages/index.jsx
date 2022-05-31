@@ -1,11 +1,14 @@
 import Head from 'next/head'
+import { Component } from 'react';
 import Card from '../components/Card';
 import Header from '../components/Header'
 import BirdSvg from '../svgs/bird.svg';
-import { Component } from 'react';
 
 async function sendQuery(value) {
 	return await fetch(`/api/search?s=${value}`).then(data => data.json())
+}
+async function scrapeLink(url) {
+	return await fetch(`/api/scrape`, {method: 'post', body: JSON.stringify({url})}).then(data => data.json())
 }
 export default class Home extends Component {
 	// const query = '';
@@ -25,7 +28,28 @@ export default class Home extends Component {
 		if (event.key === 'Enter') {
 			console.log('Search', this.state.query)
 			sendQuery(this.state.query).then(data => {
+				data = data.map( card => {card.content = ''; return card;})
 				this.setState({ query: this.state.query, results: data })
+
+				// Once results are found 
+				// we've set the available info in the cards
+				// then go through each result and parse the pages for code 
+
+				data.forEach( (result, resultIndex) => {
+					scrapeLink(result.link).then((scrapeRes) => {
+						this.setState( (state) => {
+							const newState = {...state};
+							newState.results[resultIndex].content = scrapeRes.html;
+							return newState;
+							// console.log('no?', 	html)
+							// return {results: state.results.map((res, resInd) => { res.content = scrapeRes.content; return res})}
+						})
+						// const newState = JSON.stringify(JSON.parse(this.state));
+						// console.log('Updating', newState.results[resultIndex])
+						// newState.results[resultIndex].content = html;
+						// this.setState(newState);
+					})
+				})
 			});
 		}
 	}
